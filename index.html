@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>freecycling!</title>
+</head>
+<body>
+    <header>
+        <div id="logo-search">
+            <img id="logo" src="logo.png" alt="freecycling-logo">
+            <input class="search-bar" type="textbox" placeholder="Enter search words and press enter" title="search-bar">
+        </div>
+        <li id="navigation-bar">
+            <ul>
+                <p class="item">ABOUT US</p>
+            </ul>
+            <ul>
+                <p class="item">ARTICLES</p>
+            </ul>
+            <ul>
+                <p class = "item">OUR NETWORKS</p>
+            </ul>
+            <ul> 
+                <p class = "item">CONTACT</p>
+            </ul>
+            <button id="sign-in-btn">SIGN IN</button>
+        </li>
+    </header>
+    <main>
+        <section id="upper">
+            <div clsss="main-part" id="copyright">
+                <h1 id="head-line">
+                    Give away items that <br> you no longer need for free!
+                </h1>
+                <p id="description">
+                    Freecycling can reduce significant amount of waste! We provide freecycling network in your local community. Join our network and make our Earth sustainable! 
+                </p>
+                <button id="trigger-modal" onclick="openPopup()">
+                    REGISTER
+                </button>
+            </div>
+            <div clsss="main-part">
+                <img id="support-img"src="10850.png" alt="giving-sofa-to-another">
+            </div>
+        </section>
+        <section id="lower">
+            <h2>
+                Freecycling! Activities
+            </h2>
+            <div id="community">
+                <div id="community-1">
+                    <img id="secondhand-market" src="market.jpg" alt="flea-market">
+                    <div id="overlay1">
+                        <p class="activities">Participate in local 'Freecycling!' flea markets</p>
+                    </div>
+                    <div id="container1">
+                        <div class="content1">
+                            <p class="event-description">Every month, we hold local flea markets! You can freely bring your items that you no longer use and share those with anyone visiting the flea markets!</p>
+                            <button class="find-out-more-btn">View time and location</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="community-2">
+                    <img id="giving" src="giving.png" alt="sharing-items">
+                    <div id="overlay2">
+                        <p class="activities">Find someone who needs your items <br>in 'Freecycling' network</p>
+                    </div>
+                    <div id="container2">
+                        <div class="content2">
+                            <p class="event-description">You can post any items online at any time! If someone wants to get your items, you can arrange time and location with them and trade one to one. </p>
+                            <button class="find-out-more-btn">Visit online market</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="community-3">
+                    <img id="store" src="store.jpg" alt="secondhand-shop">
+                    <div id="overlay3">
+                        <p class="activities" >Donate your items to the local 'Freecycling!' shop</p>
+                    </div>
+                    <div id="container3">
+                        <div class="content3">
+                            <p class="event-description">If you don't have time to participate in flea markets or trade one to one, you can donate your clean and intact items to our local shops. </p>
+                            <button class="find-out-more-btn">View locations and hours</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p id="copy">&copy; Freecycling!</p>
+    </footer>
+    <div class="form-ct" id="form-ct">
+        <form class="registration-form" id="registration-form">
+            <div id="form-header">
+                <h1 id="form-title">REGISTRATION</h1>
+                <button id="form-close" onclick="closePopUp()">X</button>
+            </div>
+            <div id="user-details">
+                <div class="fields">
+                    <p class="field-text" id="name" >Given name</p>
+                    <input type="text" class="field-input" title="given-name">
+                </div>
+                <div class="fields">
+                    <p class="field-text">Surname</p>
+                    <input type="text" class="field-input" title="surname">
+                </div>
+                <div class="fields">
+                    <p class="field-text">Username</p>
+                    <input type="text" class="field-input" title="username">
+                </div>
+                <div class="fields">
+                    <p class="field-text">Password</p>
+                    <input type="password" class="field-input" title="password">
+                </div>
+            </div>
+            <div id="address-details">
+                <div class="fields">
+                    <p class="field-text">Home address</p>
+                    <input type="text" class="field-input" title="home-address">
+                </div>
+                <div class="fields">
+                    <p class="field-text">Work address</p>
+                    <input type="text" class="field-input" title="work-address">
+                </div>
+            </div>
+            <div id="contact-details">
+                <div class="fields">
+                    <p class="field-text">Mobile number</p>
+                    <input type="text" class="field-input" title="mobile-number">
+                </div>
+                <div class="fields">
+                    <p class="field-text">Email</p>
+                    <input type="text" class="field-input" title="email">
+                </div>
+            </div>
+            <button id="submit-btn">SUBMIT</button>
+        </form>
+    </div>
+    <div class="black" id="black"></div>
+
+    <script>
+    let popup = document.getElementById("registration-form");
+
+
+    function openPopup(){
+        popup.classList.add("open-popup");
+        document.getElementById('black').style.display = 'block';
+    }
+
+    function closePopup(){
+        popup.classList.remove("open-popup");
+    }
+    </script>
+</body>
+</html>

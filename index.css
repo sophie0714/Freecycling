@@ -1,0 +1,503 @@
+body {
+    margin:0;
+    font-size: 20px;
+    font-family:'Roboto';
+}
+
+#logo-search{
+    display:flex; 
+    align-items:center;
+}
+
+button {
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height:100px;
+}
+
+#logo {
+    height: 100px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.search-bar {
+    height: 40px;
+    width: 480px;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    background-color: #F6F4F4;
+    border-radius: 20px;
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+
+.search-bar ::placeholder {
+    font-size: 20px;
+}
+
+#navigation-bar{
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    padding-left: 0px;
+    padding-right: 40px;
+}
+
+.item {
+    padding-bottom: 5px;
+    border-bottom: solid 3px #1c542d;
+    box-shadow: 0px 2px 0px rgba(83, 83, 83, 0.3);
+    padding-left: 5px;
+    padding-right: 5px;
+    transition: transform 0.15s; 
+    cursor: pointer;
+}
+
+.item:hover {
+    transform: translateY(-10px);
+}
+
+#sign-in-btn {
+    height: 40px;
+    width: 120px;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: #1c542d;
+    color: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.15s;
+    margin-right: 40px;
+}
+
+#sign-in-btn:hover{
+    transform: scale(1.1); 
+}
+
+
+
+
+
+
+
+
+#upper {
+    display:flex;
+    justify-content: space-between;
+    margin: 40px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+#copyright {
+    margin-left: 120px;
+}
+
+#support-img {
+    width: 1000px;
+    height: 500px;
+    object-fit:cover;
+    margin-right: 30px;
+}
+
+#head-line {
+    font-size: 50px;
+    margin-bottom: 10px;
+    margin-top: 70px;
+    color: #1c542d;
+}
+
+#description{
+    font-size: 32px;
+    color: #6A716C;
+    margin-top: 10px;
+}
+
+#trigger-modal {
+    width: 190px;
+    height: 60px;
+    border: none;
+    border-radius: 30px;
+    background-color: #1c542d;
+    color: white;
+    font-size:24px;
+    font-weight: bold;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.15s;
+}
+
+#trigger-modal:hover {
+    transform: scale(1.1); 
+}
+
+
+
+
+
+
+#lower {
+    width: 1800px;
+    height: 340px;
+    background-color: #efefef;
+    margin-left: 60px;
+    border-radius: 30px;
+    margin-top: 10px;
+    
+}
+
+h2 {
+   text-align: center;
+   font-size: 40px;
+   padding-top: 15px;
+   margin: 0px;
+}
+
+#community {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+#community-1 {
+    width: 530px;
+    height: 230px;
+    border-radius: 15px;
+    margin-left: 30px;
+    position: relative;
+}
+
+#overlay1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(48,84,28, 0.7);
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#container1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: display 0.5 ease;
+}
+
+
+ .content1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(48,84,28);
+    border-radius: 15px;
+    display: none;
+
+}
+
+#container1:hover .content1{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.event-description {
+    color: white;
+    font-size: 19px;
+    text-align: center;
+    margin-top: 50px;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.find-out-more-btn {
+    background-color: white;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+    font: #1c542d;
+}
+
+.find-out-more-btn:hover{
+    background-color:#efefef;
+}
+
+#secondhand-market {
+    width: 530px;
+    height:230px;
+    object-fit:cover;
+    border-radius: 15px;
+    opacity: 0.5;
+}
+
+#community-2 {
+    width: 530px;
+    height: 230px;
+    position:relative;
+    border-radius: 15px;
+}
+
+#overlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(28,84,45, 0.7);
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#giving {
+    width: 530px;
+    height:230px;
+    object-fit:cover;
+    border-radius: 15px;
+    opacity: 0.5;
+}
+
+#container2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: display 0.5 ease;
+}
+
+
+ .content2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(28,84,45);
+    border-radius: 15px;
+    display: none;
+
+}
+
+#container2:hover .content2{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+#community-3 {
+    width: 530px;
+    height: 230px;
+    border-radius: 15px;
+    margin-right: 30px;
+    position: relative;
+}
+
+#overlay3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(28,67,84, 0.7);
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#store {
+    width: 530px;
+    height:230px;
+    object-fit:cover;
+    border-radius: 15px;
+    object-position: center top;
+    opacity: 0.5;
+
+}
+
+#container3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: display 0.5 ease;
+}
+
+
+ .content3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(28,67,84);
+    border-radius: 15px;
+    display: none;
+
+}
+
+#container3:hover .content3{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.activities {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 80px;
+    margin: 0px;
+}
+
+
+
+
+
+#copy {
+    text-align: right;
+    margin:0px;
+    padding-right: 60px;
+    padding-top: 20px;
+    color: #1c542d;
+    font: 16px;
+}
+
+
+
+
+
+
+
+.registration-form {
+    width: 650px;
+    height: 780px;
+    background-color: white;
+    position: absolute;
+    top:165px;
+    left: 635px;
+    text-align: center;
+    border-radius: 30px;
+    visibility: hidden;
+    transition:transform 0.4s, top 0.4s;
+    z-index: 1000;
+}
+    
+
+
+.open-popup{
+    visibility:visible;
+}
+
+.black {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: 999; /* Ensure the overlay is above other content */
+    display: none; 
+}
+
+#form-header {
+    width: 650px;
+    height: 60px;
+    background-color: #1c542d;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#form-title {
+    margin: 0px;
+    color: white;
+    font-weight: bold;
+    margin-left: 30px;
+    font-size: 32px;
+}
+
+#form-close {
+    background-color: #d9d9d9;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin-right: 20px;
+    font-size: 32px;
+}
+
+#form-close:hover {
+    background-color:#c2c2c2;
+}
+
+.field-text {
+    text-align: left;
+    margin-left: 30px;
+    margin-bottom: 3px;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.field-input {
+    width: 570px;
+    height: 30px;
+    border:solid;
+    border-color: rgba(28,84,45, 0.5);
+    border-radius: 10px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+#address-details {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#submit-btn {
+    width: 582px;
+    height: 40px;
+    background-color: #d9d9d9;
+    border:none;
+    margin-top: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+#submit-btn:hover {
+    background-color: #c2c2c2;
+}
+
+#name {
+    margin-top:20px;
+}
+
+
+
